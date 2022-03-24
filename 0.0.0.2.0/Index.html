@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VideoPlayer</title>
+    <script src="https://kit.fontawesome.com/ed401b259b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./Style.css">
+    <link rel="shortcut icon" href="./Source/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- MediaPlayer -->
+    <div class="MP">
+        <!-- Source -->
+        <video id="VideoSRC" src="./Source/big_buck_bunny.mp4"></video>
+        <!-- MediaPlayerControls -->
+        <div class="MPC">
+            <!-- MediaPlayerControlsProgressBar -->
+            <div class="MPCPB">
+                <!-- MediaPlayerControlsProgressBarCurrent -->
+                <input type="range" class="MPCPBC" min="1" max="100" step="1" value="0">
+            </div>
+            <!-- MediaPlayerControlButtons -->
+            <div class="MPCB">
+                <!-- MediaPlayerControlLeftButtons -->
+                <div class="MPCLB">
+                    <div class="Btn BW_F">
+                        <i class="fa-solid fa-backward-fast"></i>
+                    </div>
+                    <div class="Btn BW">
+                        <i class="fa-solid fa-backward"></i>
+                    </div>
+                    <div class="Btn Play">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                    <div class="Btn FW">
+                        <i class="fa-solid fa-forward"></i>
+                    </div>
+                    <div class="Btn FW_F">
+                        <i class="fa-solid fa-forward-fast"></i>
+                    </div>
+                    <div class="MPTimer">
+                        <!-- CurrentTime -->
+                        <span class="CT">10:00</span>
+                        <span>/</span>
+                        <!-- VideoTime -->
+                        <span class="VT">10:00</span>
+                        <span>/</span>
+                        <!-- RemainingTime -->
+                        <span class="RT">10:00</span>
+                    </div>
+                </div>
+                <!-- MediaPlayerControlRightButtons -->
+                <div class="MPCRB">
+                    <div class="Btn Volume">
+                        <i class="icon fa-solid fa-volume-high"></i>
+                        <div class="VP">
+                            <!-- VolumeProgressBar -->
+                            <input class="VPB" type="range" min="0" max="100" step="5" value="75">
+                        </div>
+                    </div>
+                    <!-- FullScreen -->
+                    <div class="Btn FS">
+                        <i class="fa-solid fa-expand"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div> 
+     <!-- script\\\\\\\\\\\\\\\\\\\\ -->
+     <script src="./Script.js"></script>
+</body>
+</html>
